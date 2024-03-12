@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h3>拖动此书签至浏览器书签栏 》</h3>
+    <a href="javascript: (() => {    const src = 'http://localhost:5500/main.js';    document.querySelector(`script[src='${src}']`)?.remove();    Object.assign(document.body.appendChild(document.createElement(%27script%27)), { src });})();"
+        id="bookmark">Vizzy Chinese</a>
+</body>
+
+<style>
+    body {
+        margin: 0;
+        background: #111;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        background: #fff3;
+        padding: 8px 10px;
+        border-radius: 5px;
+    }
+</style>
+
+</html>
