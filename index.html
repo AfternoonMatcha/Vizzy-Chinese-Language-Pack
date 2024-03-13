@@ -8,23 +8,51 @@
 </head>
 
 <body>
-    <h3>拖动此书签至浏览器书签栏 》</h3>
-    <a href="javascript: (() => {    const src = 'https://matce.cn/Project/VCLP/main.js';    document.querySelector(`script[src='${src}']`)?.remove();    Object.assign(document.body.appendChild(document.createElement(%27script%27)), { src });})();"
-        id="bookmark">Vizzy Chinese</a>
-    <a href="javascript: (() => {    const src = 'http://localhost:5500/main.js';    document.querySelector(`script[src='${src}']`)?.remove();    Object.assign(document.body.appendChild(document.createElement(%27script%27)), { src });})();"
-        id="bookmark">Vizzy Chinese Dev</a>
+    <h1>Vizzy-Chinese-Language-Pack</h1>
+    <p>Vizzy 简体中文语言包 / By: Matce</p>
+    <div class="jump">
+        <a style="flex: 2; white-space: nowrap;"
+            href="https://github.com/AfternoonMatcha/Vizzy-Chinese-Language-Pack">项目发布地址及文档</a>
+        <a style="flex: 1; white-space: nowrap;" href="https://vizzy.io/editor">可用于 Vizzy 编辑器页面</a>
+    </div>
+
+    <div class="bookmark">
+        <h3>拖动此书签至浏览器书签栏 》</h3>
+        <a style="flex: 1;"
+            href="javascript: (() => {    const src = 'https://matce.cn/Project/VCLP/main.js';    document.querySelector(`script[src='${src}']`)?.remove();    Object.assign(document.body.appendChild(document.createElement(%27script%27)), { src });})();"
+            id="bookmark">Vizzy CN</a>
+
+    </div>
+    <p>打开 Vizzy 的项目编辑页面后，点击书签运行本项目</p>
+
 </body>
 
 <style>
     body {
-        margin: 0;
+        margin: 0 20%;
         background: #111;
         color: #fff;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
         height: 100vh;
-        gap: 10px;
+    }
+
+    .jump {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 120px;
+        flex-wrap: wrap;
+    }
+
+    .bookmark {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    h1 {
+        line-height: 1.2;
     }
 
     a {
@@ -34,6 +62,7 @@
         background: #fff3;
         padding: 8px 10px;
         border-radius: 5px;
+        margin-right: 6px;
     }
 </style>
 
