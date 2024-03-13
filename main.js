@@ -9,7 +9,7 @@ try {
         if (isDev) {
             console.clear()
         }
-        const strArray = ['Vizzy 简体中文语言包', ' Vizzy Chinese Language Pack', 'Matce. 240313-02'];
+        const strArray = ['Vizzy 简体中文语言包', ' Vizzy Chinese Language Pack', 'Matce. 240314-03'];
         console.dirxml(
             '%c ' + strArray[0] + ' %c ' + strArray[1] + ' %c ' + strArray[2] + ' %c ',
             'font-family: "Bahnschrift", "黑体"; background:#0d47a1; padding: 4px; border-radius: 3px 0 0 3px;  color: white',
@@ -67,6 +67,7 @@ try {
             { selector: ".MuiTypography-body2", order: 3, source: "Saved:", translate: "保存状态：" },
 
             { selector: ".MuiChip-label", order: 1, source: "Publish project", translate: "发布项目" },
+            { selector: ".MuiChip-label", order: 1, source: "Explore creations", translate: "探索创意" },
             { selector: ".MuiChip-label", order: 2, source: "Explore creations", translate: "探索创意" },
         ]
     }
@@ -142,6 +143,92 @@ try {
             // 侧边栏页面 素材页
             { source: "Show your uploads", translate: "查看你上传过的文件" },
             { source: "Search and use stock media provided by", translate: "查看素材库，提供方：" },
+            // 顶部栏
+            { source: "Publishes project to the community creations page", translate: "将项目公开发布至社区" },
+            { source: "Share project", translate: "分享此项目" },
+            { source: "Notifications", translate: "消息通知" },
+            // 侧边栏页面 组合页
+            { source: "Open audio processing settings", translate: "打开音频处理设置" },
+            { source: "Open render settings", translate: "打开渲染设置" },
+            { source: "Clear all objects", translate: "清除所有元素" },
+            { source: "Add new layer", translate: "新建分层" },
+            { source: "Show automations", translate: "显示动画" },
+            { source: "Show controllers", translate: "显示控制器" },
+            // 侧边栏页面 分析页
+            { source: "Add audio analyzer", translate: "添加音频分析器" },
+            // 侧边栏页面 效果页
+            { source: "Show connections", translate: "显示连接列表" },
+            { source: "List all effects", translate: "显示效果列表" },
+            { source: "Add effect", translate: "添加效果" },
+            // 侧边栏页面 动画页
+            { source: "Add folder", translate: "新建文件夹" },
+            { source: "Add automation", translate: "添加动画" },
+            // 侧边栏页面 歌词页
+            { source: "Automatically calculate timespan", translate: "自动计算时间跨度" },
+            { source: "Manually set timespan", translate: "手动设置时间跨度" },
+            { source: "Turn off gapless mode", translate: "关闭无间隙模式" },
+            { source: "Gapless mode", translate: "无间隙模式" },
+            { source: "Start mapping lyrics", translate: "开始映射歌词" },
+            { source: "Edit text", translate: "编辑文本" },
+        ]
+    }
+
+    list.tooltipTop = {
+        selector: ".MuiTooltip-popper[x-placement=top]", // 向上的悬浮提示框
+        items: [
+            // 底部工具栏
+            { source: "Zoom in track", translate: "放大音轨" },
+            { source: "Zoom out track", translate: "缩小音轨" },
+            { source: "Loop song", translate: "循环播放曲目" },
+            { source: "Don't loop song", translate: "取消循环播放曲目" },
+            { source: "Hide keyframes", translate: "隐藏关键帧" },
+            { source: "Show keyframes", translate: "显示关键帧" },
+            { source: "Stop", translate: "终止播放" },
+            { source: "Back one frame", translate: "往前一帧" },
+            { source: "Play", translate: "开始播放" },
+            { source: "Pause", translate: "暂停播放" },
+            { source: "Forward one frame", translate: "往后一帧" },
+            // 视频窗口
+            { source: "Move", translate: "移动元素" },
+            { source: "Line to", translate: "直线至" },
+            { source: "Quad to", translate: "二次曲线至" },
+            { source: "Arc to", translate: "弧线至" },
+            { source: "Toggle 3D mode", translate: "2D/3D 模式切换" },
+            { source: "Open external preview", translate: "打开外部预览窗口" },
+            // 侧边栏页面 组合页
+            { source: "Add effect", translate: "添加效果" },
+            { source: "Add item", translate: "添加元素" },
+            { source: "Add automation", translate: "添加动画" },
+            // 侧边栏页面 分析页
+            { source: "Don't show info text again", translate: "不再显示此信息" },
+            { source: "Rename", translate: "重命名" },
+            { source: "Delete", translate: "删除" },
+            // 侧边栏页面 效果页
+            { source: "Effect", translate: "效果" },
+            { source: "Layer: ", translate: "层：" },
+            // 侧边栏页面 动画页
+            { source: "Add object to automation", translate: "给动画添加元素" },
+            { source: "Expand", translate: "展开" },
+            { source: "Close", translate: "收起" },
+            { source: "Audio impact automation", translate: "受音频影响的动画" },
+            // 侧边栏页面 动画页
+            { source: "Add object to automation", translate: "给动画添加元素" },
+            { source: "Expand", translate: "展开" },
+            { source: "Close", translate: "收起" },
+            { source: "Audio impact automation", translate: "受音频影响的动画" },
+            // 侧边栏页面 素材页
+            { source: "Search images provided by", translate: "搜索图片素材，提供方：" },
+            { source: "Search videos provided by", translate: "搜索视频素材，提供方：" },
+            // 侧边栏页面 歌词页
+            { source: "Split selected text into different rows", translate: "将所选文本拆分成多行" },
+            { source: "Join selected text into same row", translate: "将所选文本合并到同一行" },
+        ]
+    }
+
+    list.bottomToolBar = {
+        selector: ".mosaic-tile:nth-child(7) .mosaic-window-body", // 底部工具栏
+        items: [
+            { selector: "#chooseAudioButton .MuiButton-label", source: "Choose audio", translate: "选择音频" },
         ]
     }
 
